@@ -33,9 +33,10 @@ namespace Parkeringsoblat
             {
                 txtRegNr.Text = (string)settings["regnr"];
             }
-            else if (settings.Contains("heavy"))
+            
+            if (settings.Contains("heavy"))
             {
-                bool isHeavy = (bool)settings["heavy"];
+                bool isHeavy = (bool) settings["heavy"];
                 if (isHeavy)
                 {
                     heavy.IsChecked = true;
@@ -45,6 +46,7 @@ namespace Parkeringsoblat
                     notHeavy.IsChecked = true;
                 }
             }
+            
         }
 
         private string GenerateSmsCode(string regnr, bool heavy)
@@ -57,7 +59,7 @@ namespace Parkeringsoblat
         {
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             settings["regnr"] = txtRegNr.Text;
-            settings["heavy"] = heavy.IsChecked;
+            settings["heavy"] = heavy.IsChecked != null && (bool)heavy.IsChecked;
 
             SmsComposeTask smsComposeTask = new SmsComposeTask();
             smsComposeTask.To = PhoneNumber;
