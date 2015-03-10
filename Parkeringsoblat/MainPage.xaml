@@ -44,11 +44,11 @@
 			<TextBlock Text="Piggdekkoblat oslo" Margin="9,-7,0,0" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
 
 			<TextBlock Text="Regnr:" Margin="0,100,0,0" />
-			<TextBox x:Name="txtRegNr" Height="72" TextWrapping="Wrap" />
+			<TextBox x:Name="txtRegNr" Height="72" TextWrapping="Wrap" Margin="25, 0, 25, 0"/>
 			<TextBlock x:Name="_as" Text="Vekt:" Margin="0" />
 			<RadioButton x:Name="notHeavy" Content="Under 3500kg" Margin="0" GroupName="group"/>
 			<RadioButton x:Name="heavy" Content="Over 3500kg" GroupName="group"/>
-			<Button Content="Send bestilling" Click="Button_Click"/>
+			<Button Content="Send bestilling" Click="Button_Click" Margin="25, 0, 25, 0"/>
 
 
 		</StackPanel>
