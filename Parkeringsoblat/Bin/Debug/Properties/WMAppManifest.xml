@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{5b8769b7-0cf0-4aed-a4ff-d45d488750b9}" Title="Parkeringsoblat" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Parkeringsoblat author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Parkeringsoblat" PublisherID="{8619dfff-022c-4781-8648-1edbd0982922}">
+  <App xmlns="" ProductID="{5b8769b7-0cf0-4aed-a4ff-d45d488750b9}" Title="Piggdekkoblat Oslo" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Parkeringsoblat author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Parkeringsoblat" PublisherID="{8619dfff-022c-4781-8648-1edbd0982922}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

@@ -48,7 +48,7 @@
 			<TextBlock x:Name="_as" Text="Vekt:" Margin="0" />
 			<RadioButton x:Name="notHeavy" Content="Under 3500kg" Margin="0" GroupName="group"/>
 			<RadioButton x:Name="heavy" Content="Over 3500kg" GroupName="group"/>
-			<Button Content="Send bestilling" Click="Button_Click" Margin="25, 0, 25, 0"/>
+			<Button x:Name="btnOrder" Content="Send bestilling" Click="Button_Click" Margin="25, 0, 25, 0"/>
 
 
 		</StackPanel>
